@@ -1,0 +1,304 @@
+body{
+    margin: 0 auto;
+    padding: 3%;
+    background-image: url('file:///C:/Users/Mc/Desktop/DirDown URL Converter/Google%20Drive%20Direct%20Download%20Link%20Generator/assest/bg.jpg');
+    background-position: center;
+    background-size: contain;
+}
+#loading{
+    position: fixed;
+    top: 40px;
+    left: 20%;
+    right: 20%;
+    height: 0;
+    width: 0;
+    padding: 0;
+    border-radius: 10px;
+    background: #1100ffa1;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+#ddo{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 190px;
+    background: #ffffff7a;
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+}
+#heading{
+    margin: 0 0 -22px 0px;
+    text-shadow: 2px 2px 2px black;
+}
+#refresh{
+display: flex;
+position: absolute;
+font-size: 20px;
+font-weight: bold;
+right: 49%;
+left: 49%;
+margin-top: -27px;
+text-shadow: 2px 2px 2px black;
+justify-content: center;
+cursor: pointer;
+}
+#input{
+    margin: 3px auto;
+}
+#output{
+    margin: 3px auto;
+}
+#genbtn,#outbtn{
+    border: 2px solid black;
+    padding: 5px;
+}
+#genbtn{
+position: relative;
+margin: 53px 0 -52px 0px;
+float: right;
+border-top: none;
+width: 40%;
+text-align: center;
+background: white;
+color: black;
+font-weight: bold;
+cursor: pointer;
+border-radius: 0px 0px 8px 8px;
+}
+#outbtn{
+position: relative;
+margin-top: -72px;
+float: left;
+border-bottom: none;
+border-top: none;
+width: 40%;
+text-align: center;
+background: black;
+color: white;
+cursor: alias;
+font-weight: bold;
+border-radius: 8px 8px 0px 0px;
+}
+#filelink{
+width: -webkit-fill-available;
+padding: 5px;
+margin: -20px 0 28px 0px;
+background: white;
+color: black;
+border: 2px solid black;
+border-radius: 8px 8px 0px 8px;
+}
+#downlink{
+    display: flex;
+    width: -webkit-fill-available;
+    height: fit-content;
+    resize: none;
+    overflow: auto;
+    padding: 5px;
+    background: black;
+    border: 2px solid black;
+    color: #10ff00;
+    font-weight: bold;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 8px 8px 8px;
+}
+#copymsg{
+    position: relative;
+    visibility: hidden;
+    float: right;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px 0px 8px 0px;
+    height: 22px;
+    top: -22px;
+    cursor: wait;
+}
+@media (max-width: 900px) {
+    #heading{
+        font-size: x-large;
+    }
+}
+@media (max-width: 800px) {
+    #outbtn{
+        height: 20px;
+    }
+}
+@media (max-width: 730px) {
+    #refresh{
+        font-size: 18px;
+    }
+}
+@media (max-width: 700px) {
+    #ddo{
+        width: 85%;
+    }
+    #refresh {
+        font-size: 18px;
+        margin-top: -27px;
+    }
+    #genbtn,#outbtn{
+        font-size: 15px;
+        width: 39%;
+    }
+    #outbtn{
+        margin-top: -71px;
+        height: 20px;
+    }
+    #genbtn{
+        margin: 53px 0 -51px 0px;
+    }
+    #filelink{
+        margin-top: -56px;
+    }
+    #downlink{
+        margin-top: -2px;
+    }
+}
+@media (max-width: 600px) {
+    #ddo{
+        width: 90%;
+    }
+    #genbtn,#outbtn{
+        width: 38%;
+    }
+}
+@media (max-width: 570px) {
+    #heading{
+        font-size: 22px;
+        text-align: center;
+    }
+    #genbtn,#outbtn{
+        width: 37%;
+    }
+}
+@media (max-width: 460px) {
+    #heading{
+        font-size: 21px;
+    }
+    #genbtn,#outbtn{
+        width: 36%;
+    }
+    #refresh{
+        font-size: 16px;
+    }
+}
+@media (max-width: 410px) {
+    #ddo{
+        width: 95%;
+    }
+    #genbtn,#outbtn{
+        font-size: 14px;
+    }
+    #outbtn{
+        margin-top: -68px;
+    }
+    #genbtn{
+        height: 14px;
+        margin: 48px 0 -48px 0px;
+    }
+    #refresh {
+        font-size: 15px;
+        margin-top: -24px;
+    }
+    #filelink{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 400px) {
+    #heading{
+        font-size: 20px;
+    }
+}
+@media (max-width: 370px) {
+    #ddo{
+        width: 96%;
+    }
+    #genbtn, #outbtn {
+        width: 34%;
+    }
+}
+@media (max-width: 320px) {
+    #ddo{
+        width: 97%;
+    }
+    #genbtn, #outbtn {
+        width: 32%;
+        font-size: 12px;
+    }
+}
+@media (max-width: 300px) {
+    #heading{
+        font-size: 17px;
+    }
+    #ddo{
+        width: 99%;
+    }
+    #refresh {
+        margin-top: -75px;
+        font-size: 16px;
+        color: #00ff1f;
+    }
+    #genbtn,#outbtn{
+        width: 46%;
+    }
+    #genbtn{
+        height: 11px;
+        padding: 7px 0 6px 0px;
+        margin-top: 62px;
+        border-radius: 0px 0px 8px 0px;
+    }
+    #outbtn{
+        margin-top: -68px;
+        border-radius: 8px 0px 0px 0px;
+    }
+    #filelink{
+        margin-top: -48px;
+    }
+}
+@media (max-width: 250px) {
+    #refresh {
+        font-size: 15px;
+        margin-top: -71px;
+    }
+    #genbtn,#outbtn{
+        width: 45.5%;
+    }
+    #outbtn{
+        height: 14px;
+        margin-top: -64px;
+        border-radius: 8px 0px 0px 0px;
+    }
+    #genbtn{
+        height: 8px;
+        padding: 3px 0 9px 0px;
+        margin: 65px 0px -49px 7px;
+        border-radius: 0px 0px 9px 0px;
+    }
+    #filelink{
+        margin: 0px 0px 20px 0px;
+    }
+}
+@media (max-width: 220px) {
+    #genbtn,#outbtn{
+        width: 45%;
+    }
+}
+@media (max-width: 200px) {
+    #heading{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 190px) {
+    #ddo{
+    overflow-x: scroll;
+    }
+}
